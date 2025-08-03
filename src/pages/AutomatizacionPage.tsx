@@ -10,7 +10,7 @@ const tarjetas = [
   {
     titulo: "Videos",
     descripcion: "Revisa videos y presentaciones en Airtable.",
-    url: "https://www.youtube.com/watch?v=4hjg582JIO0",
+    url: "https://youtu.be/zoqzNFLnso8",
     imagen: "http://31.97.12.128:8082/imagenes/png-transparent-youtube-computer-icons-youtube-angle-rectangle-black.png"
   },
   {
@@ -38,7 +38,7 @@ const AutomatizacionPage: React.FC = () => {
             <span className="sr-only">Ir al inicio</span>
           </a>
         </div>
-        <h1 className="text-4xl font-extrabold text-blue-800 mb-12 text-center drop-shadow-xl">Página de Automatización</h1>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {tarjetas.map((card, idx) => (
             <div
