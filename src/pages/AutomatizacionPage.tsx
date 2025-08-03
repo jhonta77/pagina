@@ -62,7 +62,7 @@ const AutomatizacionPage: React.FC = () => {
               <img
                 src={card.imagen}
                 alt={card.titulo}
-                className="w-28 h-28 object-cover rounded-xl mb-4 border-4 border-blue-200 shadow-inner bg-gray-50"
+                className="w-28 h-28 object-cover rounded-xl mb-4"
               />
               <h2 className="text-2xl font-bold mb-1 text-center text-gradient bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent drop-shadow">
                 {card.titulo}

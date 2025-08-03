@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -15,19 +15,26 @@ const HomePage: React.FC = () => (
   </>
 );
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const hideHeader = location.pathname === '/servicios/automatizacion';
+
   return (
-    <Router>
-      <div className="app-container relative z-0">
-        <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/servicios/automatizacion" element={<AutomatizacionPage />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div className="app-container relative z-0">
+      {!hideHeader && <Header />}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/servicios/automatizacion" element={<AutomatizacionPage />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
+
+const App: React.FC = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;
