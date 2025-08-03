@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, BarChart3, Smartphone, Brain, MessageSquare, Wrench } from 'lucide-react';
+import { Zap, BarChart3, Smartphone, Brain, MessageSquare } from 'lucide-react';
 
 const Services: React.FC = () => {
   const services = [
