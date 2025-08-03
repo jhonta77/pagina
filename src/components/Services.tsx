@@ -116,11 +116,7 @@ const Services: React.FC = () => {
               </div>
               {index === 2 && (
                 <div className="my-20">
-                  <img 
-                    src="http://31.97.12.128:8082/imagenes/Screenshot%202025-08-02%20013431.png" 
-                    alt="Visualización de datos y análisis" 
-                    className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
-                  />
+                  
                 </div>
               )}
             </React.Fragment>

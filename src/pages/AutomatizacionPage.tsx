@@ -10,8 +10,8 @@ const tarjetas = [
   {
     titulo: "Videos",
     descripcion: "Revisa videos y presentaciones en Airtable.",
-    url: "https://airtable.com/appViOb3ImcihPSjZ/shrquDDapTxkxq6vf",
-    imagen: "https://img.youtube.com/vi/XGSy3_Czz8k/hqdefault.jpg"
+    url: "https://www.youtube.com/watch?v=4hjg582JIO0",
+    imagen: "http://31.97.12.128:8082/imagenes/png-transparent-youtube-computer-icons-youtube-angle-rectangle-black.png"
   },
   {
     titulo: "Detalle de Recursos",
@@ -78,6 +78,15 @@ const AutomatizacionPage: React.FC = () => {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Imagen adicional abajo, centrada */}
+        <div className="flex justify-center mt-16">
+          <img 
+            src="http://31.97.12.128:8082/imagenes/Screenshot%202025-08-02%20013431.png" 
+            alt="Visualización de datos y análisis" 
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl"
+          />
         </div>
       </div>
     </div>
